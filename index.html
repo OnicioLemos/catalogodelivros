@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" type="module"></script>
+  <title>Lista de leitura</title>
+</head>
+<body>
+    <div id="bookFormContainer">
+      <h1>Lista de leitura</h1>
+      <h2>Adicionar Livro</h2>
+
+      <form id="bookForm">
+
+        <label for="title">Título</label>
+        <input type="text" id="title" required>
+
+        <label for="synopsis">Sinopse</label>
+        <textarea id="synopsis" required></textarea>
+
+        <label for="genre">Gênero</label>
+        <input type="text" id="genre" required>
+
+        <label for="pages">Total de Paginas</label>
+        <input type="text" id="pages" required>
+
+        <button class="btn-primary" type="submit">Adicionar Livro</button>
+
+      </form>
+    </div>
+
+    <div id="bookList"></div>
+</body>
+</html>
