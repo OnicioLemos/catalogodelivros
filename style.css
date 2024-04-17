@@ -80,13 +80,62 @@ textarea {
 
 }
 
-.btn-primary{
-    margin-top: 1rem;
-    padding: 1rem;
-    margin-right: 1rem;
-}
-
-.btn-danger{
+.addButton{
     margin-top: 1rem;
     padding: 1rem; 
+    background-color: #00ff9f;
+    color: white;
+    font-weight: bold;
+    border-radius: .5rem;
+    transition: all 0.3s;
+    border: none;
+}
+
+.addButton:hover{
+    background-color: #03c57a;
+}
+
+.addButton:active{
+    scale: 1.02;
+}
+
+.editBTN{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    width: 5rem;
+    height: 3rem;
+    background-color: #1cb7eb;
+    color: white;
+    font-weight: bold;
+    border-radius: .5rem;
+    transition: all 0.3s;
+    border: none;
+}
+
+.editBTN:hover{
+    background-color: #20aedd;
+}
+
+.editBTN:active{
+    scale: 1.02;
+}
+
+.delBTN{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f13708;
+    color: white;
+    font-weight: bold;
+    border-radius: .5rem;
+    transition: all 0.3s;
+    border: none;
+}
+
+.delBTN:hover{
+    background-color: #f25027;
+}
+
+.delBTN:active{
+    scale: 1.02;
 }

@@ -64,19 +64,19 @@ function createBookElement(book) {
   pagesElement.innerHTML = `<strong>Páginas: </strong> ${book.pages}`;
 
   const progressElement = document.createElement('p');
-  progressElement.innerHTML = `<strong>Progresso: </strong> ${book.progress / book.pages *100}%`;
+  progressElement.innerHTML = `<strong>Progresso: </strong> ${(book.progress / book.pages *100).toFixed(2)}%`;
 
   const synopsisElement = document.createElement('p');
   synopsisElement.innerHTML = `<strong>Sinopse:</strong> ${book.synopsis}`;
 
   const editButton = document.createElement('button');
   editButton.textContent = "Atualizar";
-  editButton.className = "btn-primary";
+  editButton.className = "editBTN";
   editButton.addEventListener('click', () => editBook(book));
 
   const deleteButton = document.createElement('button');
   deleteButton.textContent = "Excluir";
-  deleteButton.className = "btn-danger";
+  deleteButton.className = "delBTN";
   deleteButton.addEventListener('click', () => deleteBook(book.id));
 
   bookDiv.appendChild(bookTitle);
